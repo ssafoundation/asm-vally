@@ -58,3 +58,25 @@ span.added_product_count input {
 .product-detail-left img {
   width: 70%;
 }
+
+.search_box {
+  position: relative;
+  display: none;
+}
+
+.product_store_title_right>a {
+
+  display: none !important;
+}
+
+.product_brand_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 1vw;
+  gap: 1vw;
+}
+
+aside .brand_single_item_wrap {
+  margin-bottom: 20px;
+  background: rgb(13 110 253 / 25%);
+}

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "../../context/CartProvider";
 import androids from "./Android";
+import androidTow from "./AndroidTow";
 
 const Product_Store = () => {
   const { cart, setCart } = useContext(ShoppingCart);
@@ -16,7 +17,7 @@ const Product_Store = () => {
           <div className="product_brand_inner_wrap">
             <div className="container-xxl container-md container-fluid">
               <div className="product_title">
-                <h3>Shop by Brands</h3>
+                <h3>All Products</h3>
                 <div className="search_box shop_by_brand">
                   <input type="search" name id placeholder="Search..." />
                   <button type="submit">
@@ -24,51 +25,80 @@ const Product_Store = () => {
                   </button>
                 </div>
               </div>
-              <div className="product_brand_items_wrap">
-                <div className="product_brand_grid">
-                  {/* product brand single item  */}
+              <div class="row">
+                <div className="col-lg-2">
+                  <aside>
+                    {androidTow.map((product, i) => {
+                      return (
+                        <div key={i} className="brand_single_item_wrap">
+                          <div className="brand_single_item">
+                            <div className="b_single_item_top">
+                              <img src={product.img} alt="" />
+                              <h5>
+                                <Link to={`/product/${product.key}`}>
+                                  {product.seller}
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="b_single_item_bottom">
+                              <button onClick={() => AddToCart(product)}>
+                                <i className="fal fa-cart-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </aside>
+                </div>
+                <div className="col-lg-10 col-md-12">
+                  <div className="product_brand_items_wrap">
+                    <div className="product_brand_grid">
+                      {/* product brand single item  */}
 
-                  {androids.map((product, i) => {
-                    return (
-                      <div key={i} className="brand_single_item_wrap">
+                      {androids.map((product, i) => {
+                        return (
+                          <div key={i} className="brand_single_item_wrap">
+                            <div className="brand_single_item">
+                              <div className="b_single_item_top">
+                                <img src={product.img} alt="" />
+                                <h5>
+                                  <Link to={`/product/${product.key}`}>
+                                    {product.seller}
+                                  </Link>
+                                </h5>
+                              </div>
+                              <div className="b_single_item_bottom">
+                                <button onClick={() => AddToCart(product)}>
+                                  <i className="fal fa-cart-plus"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+
+                      {/* product brand single item  */}
+
+                      {/* view all product button  */}
+                      <div className="brand_single_item_wrap">
                         <div className="brand_single_item">
-                          <div className="b_single_item_top">
-                            <img src={product.img} alt="" />
-                            <h5>
-                              <Link to={`/product/${product.key}`}>
-                                {product.seller}
-                              </Link>
-                            </h5>
-                          </div>
-                          <div className="b_single_item_bottom">
-                            <button onClick={() => AddToCart(product)}>
-                              <i className="fal fa-cart-plus"></i>
-                            </button>
+                          <div className="view_all_product">
+                            <div>
+                              <p>View all Brands Available in E-Valy </p>
+                              <button className="btn view_all_product_btn">
+                                View All{" "}
+                                <span>
+                                  <i className="fas fa-arrow-right" />
+                                </span>
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    );
-                  })}
-
-                  {/* product brand single item  */}
-
-                  {/* view all product button  */}
-                  <div className="brand_single_item_wrap">
-                    <div className="brand_single_item">
-                      <div className="view_all_product">
-                        <div>
-                          <p>View all Brands Available in E-Valy </p>
-                          <button className="btn view_all_product_btn">
-                            View All{" "}
-                            <span>
-                              <i className="fas fa-arrow-right" />
-                            </span>
-                          </button>
-                        </div>
-                      </div>
+                      {/* view all product button  */}
                     </div>
                   </div>
-                  {/* view all product button  */}
                 </div>
               </div>
             </div>
