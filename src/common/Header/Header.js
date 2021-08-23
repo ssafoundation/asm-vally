@@ -1,5 +1,5 @@
 import React from "react";
-import Header_Bottom from "./Header_Bottom.jsx";
+import Header_Bottom from "./Header_Bottom";
 import Header_Middle from "./Header_Middle";
 import Header_Top from "./Header_Top";
 import MainCart from "./Other/MainCart";
