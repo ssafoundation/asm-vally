@@ -17,7 +17,7 @@ const Travel_Tours = () => {
                       <i className="fal fa-search" />
                     </button>
                   </div>
-                  <a href="#">View All</a>
+                  <a href="#/">View All</a>
                 </div>
               </div>
               <div className="product_items_wrap">
@@ -27,7 +27,7 @@ const Travel_Tours = () => {
                     <div className="product_single_items_wrap">
                       <div className="product_single_item">
                         <div className="product_single_top">
-                          <a href="#">
+                          <a href="#/">
                             <img
                               className="img-fluid"
                               src="assets/img/brand-1.jpg"
@@ -37,7 +37,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">
+                            <a href="#/">
                               Lorem ipsum dolor sit amet consectetur,
                             </a>
                           </div>
@@ -65,7 +65,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -91,7 +91,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -117,7 +117,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -143,7 +143,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -169,7 +169,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -195,7 +195,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -221,7 +221,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -247,7 +247,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -273,7 +273,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -299,7 +299,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>
@@ -325,7 +325,7 @@ const Travel_Tours = () => {
                         </div>
                         <div className="product_single_bottom">
                           <div className="product_title">
-                            <a href="#">Product Name</a>
+                            <a href="#/">Product Name</a>
                           </div>
                           <div className="product_price">
                             <span>৳ ২০০০০</span>

@@ -1,13 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { ShoppingCart } from "../../context/CartProvider";
 // import { express } from "../Express/Express";
 import ShopData from "../ShopDelivery/ShopData";
 // import { express } from "../Express/express";
 import "./store.css";
 import StoreDetails from "./StoreDetails";
 const Store = () => {
-  const { cart } = useContext(ShoppingCart);
+  // const { cart } = useContext(ShoppingCart);
   const { key } = useParams();
   const [store, setStore] = useState({});
   console.log();

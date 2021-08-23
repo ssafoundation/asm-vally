@@ -1,20 +1,19 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../../common/Footer/Footer";
-import { ShoppingCart } from "../../context/CartProvider";
 import androids from "../Product/Android";
 import "./product.css";
 const SingleProduct = () => {
-  const { cart, setCart } = useContext(ShoppingCart);
+  // const { cart, setCart } = useContext(ShoppingCart);
   const [single, setSingle] = useState({});
   const { key } = useParams();
   useEffect(() => {
     const product = androids?.find(
-      (singleProduct) => singleProduct?.key == key
+      (singleProduct) => singleProduct?.key === key
     );
     setSingle(product);
     console.log(androids, key, product);
-  }, []);
+  }, [key]);
 
   return (
     <>

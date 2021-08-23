@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { ShoppingCart } from "../../context/CartProvider";
 import ShopData from "../ShopDelivery/ShopData";
 // import { express } from "../Express/Express";
 
 const StoreDetails = () => {
-  const { cart } = useContext(ShoppingCart);
+  // const { cart } = useContext(ShoppingCart);
   const { key } = useParams();
-  const store = ShopData.find((i) => i.key == key);
+  const store = ShopData.find((i) => i.key === key);
   // console.log(store);
   return (
     <>

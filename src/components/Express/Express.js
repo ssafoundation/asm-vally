@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import ReactOwlCarousel from "react-owl-carousel";
 import { Link } from "react-router-dom";
-import { ShoppingCart } from "../../context/CartProvider";
 import ShopData from "../ShopDelivery/ShopData";
 const options = {
   margin: 15,
@@ -46,7 +45,7 @@ const options = {
 };
 
 const Express = () => {
-  const { cart } = useContext(ShoppingCart);
+  // const { cart } = useContext(ShoppingCart);
   return (
     <div>
       {/* product express area  */}
