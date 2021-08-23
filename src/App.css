@@ -31,6 +31,7 @@ span.added_product_count input {
   background: rgb(13 110 253 / 25%);
   margin-top: 5px;
   border-radius: 3px;
+  margin-bottom: 5px;
 }
 
 .emart-brand h2 a {
@@ -79,4 +80,10 @@ span.added_product_count input {
 aside .brand_single_item_wrap {
   margin-bottom: 20px;
   background: rgb(13 110 253 / 25%);
+}
+
+.added_product_body_inner_wrap {
+  overflow-y: scroll;
+  height: 72vh;
+  background: #e9ecef;
 }

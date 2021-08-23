@@ -7,7 +7,8 @@
   outline: none;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   /* font-family: 'Poppins', sans-serif; */
   font-family: "Uni Neue";
@@ -23,7 +24,8 @@ li {
   list-style-type: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #666;
   margin-bottom: 0;
 }
@@ -34,7 +36,9 @@ h3 {
   font-weight: 600;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   color: #000;
   font-weight: 700;
   margin-bottom: 0;
@@ -77,6 +81,7 @@ main {
   z-index: 99999;
   position: relative;
 }
+
 .live_chat {
   position: fixed;
   right: 20px;
@@ -94,6 +99,7 @@ main {
   color: #fff;
   border-radius: 50%;
 }
+
 /* ================= scroll sticky menu   ================= */
 
 .header-main-area {
@@ -182,13 +188,14 @@ main {
   background: #fff;
   position: relative;
 }
+
 /* .search_box.shop_by_brand {
   margin: 0 auto;
 } */
 .added_product_body {
   align-items: unset !important;
   justify-content: unset !important;
-  padding: 0px 5%;
+  /* padding: 0px 5%; */
   text-align: left !important;
   display: unset !important;
 }
@@ -548,21 +555,23 @@ p span span {
   background: #000;
   /* ================= padding: 7px 0;  ================= */
 }
+
 span.notification_show {
   position: absolute;
-  width: 20px!important;
-  height: 20px!important;
-  background: #0a58ca!important;
+  width: 20px !important;
+  height: 20px !important;
+  background: #0a58ca !important;
   color: #fff;
   right: -5px;
   top: -5px;
-  font-size: 11px!important;
+  font-size: 11px !important;
   font-weight: 700;
 }
 
 .shop_cart_wrap {
   position: relative;
 }
+
 .header_bottom_wrap ul li a {
   color: #fff;
 }
@@ -578,6 +587,7 @@ span.notification_show {
 .category_btn {
   width: 26px;
 }
+
 .category_title {
   width: 90%;
 }
@@ -700,7 +710,7 @@ span.notification_show {
 .on_going_campaign h4 {
   margin-bottom: 10px;
   font-size: 15px;
- 
+
 }
 
 .feature_single_item img {
@@ -990,7 +1000,7 @@ span.notification_show {
   margin-bottom: 0 !important;
   height: 35px;
   line-height: 35px;
-  line-height: 35px!important;
+  line-height: 35px !important;
   padding: 0px 10px;
 }
 
@@ -1219,7 +1229,8 @@ span.notification_show {
   color: #000;
 }
 
-.modal__main__wrap .nav.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.modal__main__wrap .nav.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
   color: #dc3545;
   background-color: unset;
   border-bottom: 2px solid red;
@@ -1504,10 +1515,12 @@ span.notification_show {
 
 .form_otp_inner_wrap h5 {
   margin-bottom: 10px;
-} 
+}
+
 .otp_input_field {
   margin-bottom: 15px;
 }
+
 .otp_input_field input {
   width: 30px;
   border: 1px solid #ddd;
@@ -1528,17 +1541,20 @@ span.notification_show {
   border-radius: 5px;
   margin-bottom: 5px;
 }
+
 p.wrong_otp {
   margin-bottom: 15px;
   padding: 0 0;
   color: red;
   font-weight: 600;
 }
-.otp_reset_wrap p a{
+
+.otp_reset_wrap p a {
   color: #0a58ca;
   font-weight: 600;
 }
-.otp_input_field ::placeholder{
+
+.otp_input_field ::placeholder {
   font-size: 22px;
   line-height: 35px;
 }
