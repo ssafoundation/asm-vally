@@ -4,7 +4,7 @@ import { ShoppingCart } from "../../../context/CartProvider";
 const ProductAddCart = () => {
   const { cart, setCart } = useContext(ShoppingCart);
   const productDel = (key) => {
-    const filterCart = cart.filter((i) => i.key != key);
+    const filterCart = cart.filter((i) => i.key !== key);
     setCart(filterCart);
   };
   // console.log(productDel);
