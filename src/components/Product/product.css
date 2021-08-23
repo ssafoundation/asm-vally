@@ -1,0 +1,18 @@
+/* .brand_single_item {
+    position: relative;
+} */
+
+.b_single_item_bottom button {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    border: 1px solid #212529;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+}
+
+.brand_single_item img {
+    width: 100%;
+    height: 100px;
+}
