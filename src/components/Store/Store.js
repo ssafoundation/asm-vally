@@ -48,7 +48,7 @@ const Store = () => {
                       </div>
                       <div className="shop_store_contact_chat_wrap">
                         <button>
-                          <a href="#">
+                          <a href="#/">
                             <i className="fal fa-bell" /> Follow
                           </a>
                         </button>

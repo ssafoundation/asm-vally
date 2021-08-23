@@ -52,10 +52,10 @@ const SingleProduct = () => {
                       </div>
                     </div>
                     {/* <div className="add_to_cart_btn_p">
-                      <a href="#" className="addtocart btn">
+                      <a href="#/" className="addtocart btn">
                         <i className="fal fa-shopping-cart" /> Add to Cart
                       </a>
-                      <a href="#" className="addtocart btn">
+                      <a href="#/" className="addtocart btn">
                         <i className="fal fa-heart" /> Wishlist
                       </a>
                     </div> */}
@@ -170,7 +170,7 @@ const SingleProduct = () => {
                     <span>
                       <span>
                         <h4>
-                          <a href="#">Jomjom Traders</a>
+                          <a href="#/">Jomjom Traders</a>
                         </h4>
                         <p>Stock available</p>
                         <div className="available_shop_review">
@@ -192,11 +192,11 @@ const SingleProduct = () => {
                         </div>
                         <span>
                           <div className="available_shop_profile">
-                            <a href="#" className="available_chat_btn">
+                            <a href="#/" className="available_chat_btn">
                               <i className="fal fa-comment" />
                               Chat
                             </a>
-                            <a href="#" className="available_buy_btn">
+                            <a href="#/" className="available_buy_btn">
                               <i className="fal fa-shopping-cart" />
                               Buy Now
                             </a>
@@ -216,7 +216,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-10.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>
@@ -226,7 +226,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-6.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>
@@ -236,7 +236,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-8.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>
@@ -246,7 +246,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-9.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>
@@ -256,7 +256,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-11.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>
@@ -266,7 +266,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-12.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>
@@ -276,7 +276,7 @@ const SingleProduct = () => {
                 {/* single related product  */}
                 <div className="single_available_related_product">
                   <img src="assets/img/brand-7.jpg" alt="" />
-                  <a href="#">Related Product</a>
+                  <a href="#/">Related Product</a>
                   <div className="related_product_price">
                     <del>$400</del>
                     <span>$300</span>

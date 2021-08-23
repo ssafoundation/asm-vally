@@ -1,12 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import ShopData from "../ShopDelivery/ShopData";
 // import { express } from "../Express/Express";
 
 const StoreDetails = () => {
   // const { cart } = useContext(ShoppingCart);
-  const { key } = useParams();
-  const store = ShopData.find((i) => i.key === key);
+  // const { key } = useParams();
+  // const store = ShopData.find((i) => i.key === key);
   // console.log(store);
   return (
     <>
@@ -22,7 +20,7 @@ const StoreDetails = () => {
                     <ul>
                       <li>
                         <a href="#/">
-                          Desktop{" "}
+                          Desktop
                           <span>
                             <i className="fal fa-angle-right" />
                           </span>
@@ -203,7 +201,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -235,7 +233,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -267,7 +265,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -299,7 +297,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -331,7 +329,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -363,7 +361,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -395,7 +393,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -427,7 +425,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -459,7 +457,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -491,7 +489,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -523,7 +521,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>
@@ -555,7 +553,7 @@ const StoreDetails = () => {
                                         </div>
                                         <div className="shop_checkout_btn">
                                           <button>
-                                            <i className="fal fa-shopping-cart" />{" "}
+                                            <i className="fal fa-shopping-cart" />
                                             Buy Now
                                           </button>
                                         </div>

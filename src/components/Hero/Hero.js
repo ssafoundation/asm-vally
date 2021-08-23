@@ -38,7 +38,7 @@ const Hero = () => {
                             className="hero_slider_single_item"
                             heroslider={heroslider}
                           >
-                            <a href="#">
+                            <a href="#/">
                               <img
                                 src={heroslider.img}
                                 className="img-fluid"

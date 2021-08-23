@@ -2,8 +2,8 @@ import React from "react";
 import Footer from "../../common/Footer/Footer";
 import Express from "../Express/Express";
 import Hero from "../Hero/Hero";
-import Product_Store from "../Product/ProductStore";
-import Travel_Tours from "../TravelTours/TravelTours";
+import ProductStore from "../Product/ProductStore";
+import TravelTours from "../TravelTours/TravelTours";
 
 const Home = () => {
   return (
@@ -13,8 +13,8 @@ const Home = () => {
       <Express />
       {/* <ShopDelivery /> */}
       {/* <Product_Brand /> */}
-      <Product_Store />
-      <Travel_Tours />
+      <ProductStore />
+      <TravelTours />
       <Footer />
     </div>
   );
