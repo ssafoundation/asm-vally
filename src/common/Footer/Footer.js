@@ -97,7 +97,7 @@ const Footer = () => {
           <div className="container-xxl container-md container-fluid">
             <div className="footer_bottom_wrap">
               <div className="copy_right_text">
-                <p>© 2021 E-valy.com Limited. All rights reserved.</p>
+                <p>© 2021 ASM Vally.com Limited. All rights reserved.</p>
               </div>
               <div className="footer_bottom_social_area">
                 <a href="/#">

@@ -35,7 +35,7 @@ const Product_Store = () => {
                           <div className="b_single_item_top">
                             <img src={product.img} alt="" />
                             <h5>
-                              <Link to={"/" + product.name}>
+                              <Link to={`/product/${product.key}`}>
                                 {product.seller}
                               </Link>
                             </h5>

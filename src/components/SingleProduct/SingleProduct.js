@@ -1,16 +1,23 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Footer from "../../common/Footer/Footer";
 import { ShoppingCart } from "../../context/CartProvider";
+import androids from "../Product/Android";
 import "./product.css";
 const SingleProduct = () => {
   const { cart, setCart } = useContext(ShoppingCart);
-  const [single, setSingle] = useState();
-  useEffect((product) => {
-    const value = [...cart, product];
-    setSingle(value);
+  const [single, setSingle] = useState({});
+  const { key } = useParams();
+  useEffect(() => {
+    const product = androids?.find(
+      (singleProduct) => singleProduct?.key == key
+    );
+    setSingle(product);
+    console.log(androids, key, product);
   }, []);
-  console.log(single);
+
   return (
-    <div>
+    <>
       <section className="product_page_wrap sticky_header">
         <div className="container-xxl container g-0">
           <div className="product_inner_page">
@@ -19,72 +26,46 @@ const SingleProduct = () => {
               <div className="row">
                 <div className="col-md-5">
                   <div className="product-detail-left">
-                    <div className="sp-wrap">
-                      <a href="assets/img/product/1_big.jpg">
-                        <img src="assets/img/product/1_big.jpg" alt="" />
-                      </a>
-                      <a href="assets/img/product/2_big.jpg">
-                        <img src="assets/img/product/2_tb.jpg" alt="" />
-                      </a>
-                      <a href="assets/img/product/3_big.jpg">
-                        <img src="assets/img/product/3_tb.jpg" alt="" />
-                      </a>
-                    </div>
+                    <img src={single.img} alt="" />
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="product-detail-right">
                     <div className="product_page_title">
-                      <h2>Product Title</h2>
+                      <h2>{single.name}</h2>
                     </div>
                     <div className="product_page_p_code">
-                      <h4>SKU: JDFNSFNJF</h4>
+                      <h4>SKU: {single.key}</h4>
                     </div>
                     <h5>
-                      Brand :<span>Apple</span>
-                      <span>Apple</span>
-                      <span>Apple</span>
+                      Brand :<span>{single.seller}</span>
                     </h5>
                     <div className="product_page_product_price">
-                      <h3>$110</h3>
+                      <h3>${single.price}</h3>
                       <span>Lorem, ipsum dolor.</span>
                     </div>
                     <div className="product_page_select_product">
                       <div className="product_page_product_quantity">
                         <label htmlFor="cars">Quantity:</label>
                         <div className="counter">
-                          <button
-                            className="down"
-                            onclick="decreaseCount(event, this)"
-                          >
-                            -
-                          </button>
-                          <input type="text" defaultValue={1} />
-                          <button
-                            className="up"
-                            onclick="increaseCount(event, this)"
-                          >
-                            +
-                          </button>
+                          <h3>1</h3>
                         </div>
                       </div>
                     </div>
-                    <div className="add_to_cart_btn_p">
+                    {/* <div className="add_to_cart_btn_p">
                       <a href="#" className="addtocart btn">
-                        {" "}
                         <i className="fal fa-shopping-cart" /> Add to Cart
                       </a>
                       <a href="#" className="addtocart btn">
-                        {" "}
                         <i className="fal fa-heart" /> Wishlist
                       </a>
-                    </div>
+                    </div> */}
                     <div className="product_call_to_action_btn">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                       <h4>
                         <span className="phone_icon">
                           <i className="far fa-phone" />
-                        </span>{" "}
+                        </span>
                         +880123456789
                       </h4>
                     </div>
@@ -105,10 +86,10 @@ const SingleProduct = () => {
                       <p>Sold by</p>
                       <div className="seller_profile">
                         <div className="seller_logo">
-                          <img src="assets/img/icon/seller_logo-1.png" alt="" />
+                          <img src={single.img} alt="" />
                         </div>
                         <div className="seller_info">
-                          <h4>Laptop</h4>
+                          <h4>{single.seller}</h4>
                           <p>Dhaka, Bangladesh</p>
                         </div>
                       </div>
@@ -309,7 +290,8 @@ const SingleProduct = () => {
           </div>
         </div>
       </section>
-    </div>
+      <Footer />
+    </>
   );
 };
 
